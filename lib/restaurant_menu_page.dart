@@ -12,12 +12,51 @@ class RestaurantMenuPage extends StatelessWidget {
           title: Text("Bin-Waber"),
           
         ),
-        body: Column(
-          children: [
-            Container(
-           
-child: Image.asset('assets/images/y4.png'),
+        body: Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: 250,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/y4.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+             
             ),
+          ),          Positioned(
+            top: 40,
+            left: 16,
+            child: IconButton(
+              icon: const Icon(Icons.arrow_back, color: Colors.white),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          ),
+          Positioned(
+            top: 200,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: ClipRRect(
+              borderRadius: const BorderRadius.only(
+                topLeft: Radius.circular(32.0),
+                topRight: Radius.circular(32.0),
+              ),
+              child: Container(
+                color: Colors.white,
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child:
+        
+         Column(
+          children: [
+          
             Container(
              decoration: BoxDecoration(
               borderRadius: BorderRadius.only(topLeft: Radius.circular(20),topRight: Radius.circular(20))
@@ -66,7 +105,7 @@ child: Image.asset('assets/images/y4.png'),
                         child: Container(
                           height: 70,
                         decoration: BoxDecoration(
-                        color: Colors.blueGrey,
+              color: Colors.orange.shade100,
                         borderRadius: BorderRadius.circular(5)
                         
                         ),
@@ -112,6 +151,6 @@ child: Image.asset('assets/images/y4.png'),
           ],
         ),
       ),
-    );
+    )))])));
   }
 }

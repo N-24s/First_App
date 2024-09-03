@@ -9,18 +9,55 @@ class OffersPage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Restarunts"),
       ),
-      body: 
+      body:  Stack(
+        children: [
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: 250,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/y4.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+             
+            ),
+          ),          Positioned(
+            top: 40,
+            left: 16,
+            child: IconButton(
+              icon: Icon(Icons.arrow_back, color: Colors.white),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+            ),
+          ),
+          Positioned(
+            top: 200,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            child: ClipRRect(
+              borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(32.0),
+                topRight: Radius.circular(32.0),
+              ),
+              child: Container(
+                color: Colors.white,
+                child: Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child:
+               
       Column(
         children: [
-           Container(
-           
-child: Image.asset('assets/images/y4.png'),
-            ),
           Container(
             margin: EdgeInsets.all(16.0),
             padding: EdgeInsets.all(16.0),
             decoration: BoxDecoration(
-              color: Colors.orange.shade100,
+              color: Colors.orange,
               borderRadius: BorderRadius.circular(12.0),
             ),
             child: Row(
@@ -52,8 +89,20 @@ child: Image.asset('assets/images/y4.png'),
           ),
         ],
       ),
+    
+
+
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
     );
   }
+}
+
+
 
   Widget _buildRestaurantCard(BuildContext context,String name, String category, String rating, String imagePath) {
     return ListTile(
@@ -81,4 +130,4 @@ child: Image.asset('assets/images/y4.png'),
       ),
     );
   }
-}
+
