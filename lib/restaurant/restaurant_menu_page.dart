@@ -1,6 +1,6 @@
-import 'package:first_app/offers_page.dart';
-import 'package:first_app/restaurant_offer_page.dart';
-import 'package:first_app/widgets/build_header_section.dart';
+import 'package:first_app/restaurant/offers_page.dart';
+import 'package:first_app/restaurant/restaurant_offer_page.dart';
+import 'package:first_app/restaurant/widgets/build_header_section.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantMenuPage extends StatelessWidget {

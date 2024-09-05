@@ -31,6 +31,11 @@ dependencies:
   flutter:
     sdk: flutter
   get:
+  flutter_onboarding_slider: ^1.0.11
+  another_flutter_splash_screen:
+  flutter_spinkit: 
+  carousel_slider:
+  assets_audio_player:
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -63,8 +68,10 @@ flutter:
   assets:
     - assets/images/y1.png
     - assets/images/
+    - assets/audio/
     - assets/images/y3.png
     - assets/images/y4.png
+    - assets/audio/114.mp3
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

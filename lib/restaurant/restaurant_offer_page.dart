@@ -1,4 +1,4 @@
-import 'package:first_app/widgets/build_header_section.dart';
+import 'package:first_app/restaurant/widgets/build_header_section.dart';
 import 'package:flutter/material.dart';
 
 class RestaurantOfferPage extends StatelessWidget {

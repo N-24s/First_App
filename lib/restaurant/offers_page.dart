@@ -1,15 +1,15 @@
-import 'package:first_app/restaurant_menu_page.dart';
-import 'package:first_app/widgets/build_bodysection.dart';
-import 'package:first_app/widgets/build_header_section.dart';
+import 'package:first_app/restaurant/restaurant_menu_page.dart';
+import 'package:first_app/restaurant/widgets/build_bodysection.dart';
+import 'package:first_app/restaurant/widgets/build_header_section.dart';
 import 'package:flutter/material.dart';
 
 class OffersPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
     
-      body:  const Stack(
+      body:  Stack(
         children: [
           buildHeaderSection(),         
           _buildArrowBack(),
