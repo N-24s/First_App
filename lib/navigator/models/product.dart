@@ -1,6 +1,7 @@
 class Product {
 late  int id;
  late double price;
+ bool isFavourite=false;
  late String name,category,brand,image_url;
  
 // late  List<String> thumbnails;
