@@ -1,5 +1,5 @@
 import 'package:another_flutter_splash_screen/splashs/fade_In_splash.dart';
-import 'package:first_app/navigator/views/home_screen.dart';
+import 'package:first_app/product_app/views/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 class SplashScreen extends StatelessWidget {

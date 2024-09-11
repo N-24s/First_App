@@ -1,17 +1,17 @@
 import 'package:first_app/form/signup_screen.dart';
-import 'package:first_app/navigator/models/product.dart';
-import 'package:first_app/navigator/view_model/product_vm.dart';
-import 'package:first_app/navigator/views/cart_screen.dart';
-import 'package:first_app/navigator/views/details_screen.dart';
-import 'package:first_app/navigator/views/favourite.dart';
-import 'package:first_app/navigator/views/home_screen.dart';
-import 'package:first_app/navigator/views/login_screen.dart';
-import 'package:first_app/navigator/views/not_found.dart';
-import 'package:first_app/navigator/views/order_screen.dart';
-import 'package:first_app/navigator/views/splash_screen.dart';
-import 'package:first_app/navigator/views/stack_screen.dart';
-import 'package:first_app/navigator/stateful%20_widget/demo_stateful.dart';
-import 'package:first_app/navigator/views/success.dart';
+import 'package:first_app/product_app/models/product.dart';
+import 'package:first_app/product_app/view_model/product_vm.dart';
+import 'package:first_app/product_app/views/cart_screen.dart';
+import 'package:first_app/product_app/views/details_screen.dart';
+import 'package:first_app/product_app/views/favourite.dart';
+import 'package:first_app/product_app/views/home_screen.dart';
+import 'package:first_app/product_app/views/login_screen.dart';
+import 'package:first_app/product_app/views/not_found.dart';
+import 'package:first_app/product_app/views/order_screen.dart';
+import 'package:first_app/product_app/views/splash_screen.dart';
+import 'package:first_app/product_app/views/stack_screen.dart';
+import 'package:first_app/product_app/stateful%20_widget/demo_stateful.dart';
+import 'package:first_app/product_app/views/success.dart';
 import 'package:flutter/material.dart';
 
 class AppRoutes {

@@ -1,12 +1,12 @@
 import 'package:another_flutter_splash_screen/another_flutter_splash_screen.dart';
 import 'package:first_app/Tabs/tabbar.dart';
 import 'package:first_app/chats/whatssapp_chats.dart';
-import 'package:first_app/navigator/utils/app_routes.dart';
-import 'package:first_app/navigator/views/cart_screen.dart';
-import 'package:first_app/navigator/views/details_screen.dart';
-import 'package:first_app/navigator/views/home_screen.dart';
-import 'package:first_app/navigator/views/login_screen.dart';
-import 'package:first_app/navigator/views/splash_screen.dart';
+import 'package:first_app/product_app/utils/app_routes.dart';
+import 'package:first_app/product_app/views/cart_screen.dart';
+import 'package:first_app/product_app/views/details_screen.dart';
+import 'package:first_app/product_app/views/home_screen.dart';
+import 'package:first_app/product_app/views/login_screen.dart';
+import 'package:first_app/product_app/views/splash_screen.dart';
 import 'package:first_app/restaurant/offers_page.dart';
 import 'package:first_app/onboarding/onboarding.dart';
 import 'package:first_app/packages/packages.dart';
@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
       useMaterial3: false,
     ),
       // home:  HomeScreen(),
-      initialRoute: "/splash",
+      initialRoute: "/signup",
       onGenerateRoute: AppRoutes.routeManager,
       // routes: {
       //   "/home":(ctx)=>HomeScreen(),

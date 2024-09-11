@@ -1,5 +1,5 @@
-import 'package:first_app/navigator/data/data.dart';
-import 'package:first_app/navigator/models/product.dart';
+import 'package:first_app/product_app/data/data.dart';
+import 'package:first_app/product_app/models/product.dart';
 
 class ProductVm {
 

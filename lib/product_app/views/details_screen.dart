@@ -1,6 +1,6 @@
-import 'package:first_app/navigator/models/product.dart';
-import 'package:first_app/navigator/view_model/product_vm.dart';
-import 'package:first_app/navigator/views/cart_screen.dart';
+import 'package:first_app/product_app/models/product.dart';
+import 'package:first_app/product_app/view_model/product_vm.dart';
+import 'package:first_app/product_app/views/cart_screen.dart';
 import 'package:flutter/material.dart';
 
 

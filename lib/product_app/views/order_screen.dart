@@ -1,7 +1,9 @@
-import 'package:first_app/navigator/view_model/city_vm.dart';
-import 'package:first_app/navigator/view_model/user_vm.dart';
+import 'package:first_app/product_app/view_model/city_vm.dart';
+import 'package:first_app/product_app/view_model/user_vm.dart';
+import 'package:first_app/product_app/views/widgets/text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:image_picker/image_picker.dart';
 
 class OrderScreen extends StatefulWidget {
   const OrderScreen({super.key});
@@ -35,46 +37,24 @@ static  TextEditingController firstNameController=TextEditingController();
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-              TextFormField(
+              NTextFormField(
                       validator: (value) => checkValiedation(value,firstNameController.text),    
-
                        controller: firstNameController,
-                       decoration:  InputDecoration(
-                        
                         label: const Text("الاسم"),
                         hintText: "ادخل اسمك الرباعي هنا",
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(),
-                           borderRadius: BorderRadius.circular(20),
-                        ),
-                         enabledBorder: OutlineInputBorder(
-                          
-                          borderSide: const BorderSide(),
-                           borderRadius: BorderRadius.circular(20),
-                        ),
+                  
                       
-                       ),
                       ),
             
                 const SizedBox(height: 10,),
                
-                 TextFormField(
+                 NTextFormField(
                   controller: phoneController,
                         validator: (value) => checkValiedationPhone(value,phoneController.text),    
-                       decoration:  InputDecoration(
+                 
                         label: const Text("رقم الهاتف"),
                         hintText: "ادخل رقم هاتفك هنا",
-                        focusedBorder: OutlineInputBorder(
-                          borderSide: const BorderSide(),
-                           borderRadius: BorderRadius.circular(20),
-                        ),
-                          enabledBorder: OutlineInputBorder(
-                          
-                          borderSide: const BorderSide(),
-                           borderRadius: BorderRadius.circular(20),
-                        ),
-                      
-                       ),
+                     
                       ),
               
                        const SizedBox(height: 10,),
@@ -257,3 +237,5 @@ else
 return "الحقل مطلوب";
 
 }
+
+
